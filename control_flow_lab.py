@@ -50,6 +50,7 @@ while phrase != "quit":
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
+'''
 dog_age = input("Input a dog's age: ")
 dog_years = int(dog_age)
 if dog_years < 3:
@@ -57,8 +58,7 @@ if dog_years < 3:
 else: 
     dog_years = 20 + (dog_years - 2) * 7
 print(f"The dog's age in dog years is {dog_years}")
-
-
+'''
 
 
 # exercise-04 What kind of Triangle?
@@ -76,6 +76,20 @@ print(f"The dog's age in dog years is {dog_years}")
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
+print("Enter the lengths of three sides of a triangle: ")
+a = input("a: ")
+b = input("b: ")
+c = input("c: ")
+
+triangle_type = ""
+if a == b and b == c: 
+    triangle_type = "equilateral"
+elif a == b or a == c or b == c:
+    triangle_type = "isoceles"
+else:
+    triangle_type = "scalene"
+
+print(f"A triangle with sides of {a}, {b} & {c} is a {triangle_type} triangle")
 
 
 
