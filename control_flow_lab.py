@@ -75,7 +75,7 @@ print(f"The dog's age in dog years is {dog_years}")
 #      isosceles - exactly two sides are the same length
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
-
+'''
 print("Enter the lengths of three sides of a triangle: ")
 a = input("a: ")
 b = input("b: ")
@@ -91,6 +91,7 @@ else:
 
 print(f"A triangle with sides of {a}, {b} & {c} is a {triangle_type} triangle")
 
+'''
 
 
 
@@ -112,8 +113,19 @@ print(f"A triangle with sides of {a}, {b} & {c} is a {triangle_type} triangle")
 # The next number is found by adding the two numbers before it
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
+num1 = 0
+num2 = 1
+next_num = num2
 
+# handle base cases
+print("term: 0 / number: 0")
+print("term: 1 / number: 1")
 
+for n in range(2, 50):
+    print(f"term: {n} / number: {next_num}")
+    num1 = num2
+    num2 = next_num
+    next_num = num1 + num2
 
 
 
