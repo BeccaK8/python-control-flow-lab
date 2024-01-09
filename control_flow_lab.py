@@ -10,12 +10,13 @@
 
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
-
+'''
 letter = input("Please enter a letter from the alphabet (a-z or A-Z): ").lower()
 if "aeiou".find(letter) < 0:
     print(f"The letter {letter} is a consonant")
 else:
     print(f"The letter {letter} is a vowel")
+'''
 
 
 # exercise-02 Length of Phrase
@@ -26,12 +27,12 @@ else:
 # 2. Print the following message:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
-
+'''
 phrase = ""
 while phrase != "quit":
     phrase = input("Please enter a word or phrase: ")
     print(f"What you entered is {len(phrase)} characters long")
-
+'''
 
 
 # exercise-03 Calculate Dog Years
@@ -49,6 +50,13 @@ while phrase != "quit":
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
+dog_age = input("Input a dog's age: ")
+dog_years = int(dog_age)
+if dog_years < 3:
+    dog_years *= 10
+else: 
+    dog_years = 20 + (dog_years - 2) * 7
+print(f"The dog's age in dog years is {dog_years}")
 
 
 
