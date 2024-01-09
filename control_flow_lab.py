@@ -10,6 +10,7 @@
 
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
+
 letter = input("Please enter a letter from the alphabet (a-z or A-Z): ").lower()
 if "aeiou".find(letter) < 0:
     print(f"The letter {letter} is a consonant")
@@ -26,7 +27,10 @@ else:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
-
+phrase = ""
+while phrase != "quit":
+    phrase = input("Please enter a word or phrase: ")
+    print(f"What you entered is {len(phrase)} characters long")
 
 
 
