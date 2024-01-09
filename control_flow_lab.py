@@ -10,13 +10,14 @@
 
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
-'''
-letter = input("Please enter a letter from the alphabet (a-z or A-Z): ").lower()
-if "aeiou".find(letter) < 0:
-    print(f"The letter {letter} is a consonant")
+
+print("\nExercise 1: \n")
+
+input_letter = input("Please enter a letter from the alphabet (a-z or A-Z): ").lower()
+if "aeiou".find(input_letter) < 0:
+    print(f"The letter {input_letter} is a consonant")
 else:
-    print(f"The letter {letter} is a vowel")
-'''
+    print(f"The letter {input_letter} is a vowel")
 
 
 # exercise-02 Length of Phrase
@@ -27,12 +28,13 @@ else:
 # 2. Print the following message:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
-'''
-phrase = ""
-while phrase != "quit":
-    phrase = input("Please enter a word or phrase: ")
-    print(f"What you entered is {len(phrase)} characters long")
-'''
+
+print("\nExercise 2: \n")
+
+input_phrase = ""
+while input_phrase != "quit":
+    input_phrase = input("Please enter a word or phrase: ")
+    print(f"What you entered is {len(input_phrase)} characters long")
 
 
 # exercise-03 Calculate Dog Years
@@ -50,15 +52,15 @@ while phrase != "quit":
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
-'''
-dog_age = input("Input a dog's age: ")
-dog_years = int(dog_age)
+print("\nExercise 3: \n")
+
+input_dog_age = input("Input a dog's age: ")
+dog_years = int(input_dog_age)
 if dog_years < 3:
     dog_years *= 10
 else: 
     dog_years = 20 + (dog_years - 2) * 7
 print(f"The dog's age in dog years is {dog_years}")
-'''
 
 
 # exercise-04 What kind of Triangle?
@@ -75,7 +77,9 @@ print(f"The dog's age in dog years is {dog_years}")
 #      isosceles - exactly two sides are the same length
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
-'''
+
+print("\nExercise 4: \n")
+
 print("Enter the lengths of three sides of a triangle: ")
 a = input("a: ")
 b = input("b: ")
@@ -90,10 +94,6 @@ else:
     triangle_type = "scalene"
 
 print(f"A triangle with sides of {a}, {b} & {c} is a {triangle_type} triangle")
-
-'''
-
-
 
 
 # exercise-05 Fibonacci sequence for first 50 terms
@@ -113,7 +113,9 @@ print(f"A triangle with sides of {a}, {b} & {c} is a {triangle_type} triangle")
 # The next number is found by adding the two numbers before it
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
-'''
+
+print("\nExercise 5: \n")
+
 num1 = 0
 num2 = 1
 next_num = num2
@@ -127,8 +129,6 @@ for n in range(2, 50):
     num1 = num2
     num2 = next_num
     next_num = num1 + num2
-
-'''
 
 
 # exercise-06 What's the Season?
@@ -152,6 +152,9 @@ for n in range(2, 50):
 #
 # After setting the likely season, you can use another if...elif...else statement to "adjust" if
 # the day number falls within a certain range.
+
+print("\nExercise 6: \n")
+
 input_month = input("Enter the month of the year (Jan - Dec): ")
 input_day = int(input("Enter the day of the month: "))
 season = ""
